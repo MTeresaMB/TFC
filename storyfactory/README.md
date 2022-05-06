@@ -1,64 +1,53 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![logo](https://user-images.githubusercontent.com/72388130/161275058-0e3a496e-2bd0-49b0-82d1-fc4c455de5c8.PNG)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# StoryFactory
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Descripción - objetivo de la aplicación
 
-## Learning Laravel
+  Es una aplicación que facilita la escritura de una novela o historia, proveyendo al usuario de las herramientas necesarias para ello. El usuario podrá crear todos  los personajes de la historia, y tener acceso rápdio a ellos, tener a mano tanto la historia de cada uno de ellos como sus caracteristicas. Podrá crear los lugares  donde se desarrolla la historia y sus objetos. Y finalmente, cuando este acabada podrá exportarla a diferentes formatos (PDF, EPUB, DOCX).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Tecnología utilizada
 
-## Laravel Sponsors
+ ## BackEnd
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    Como gestor de base de datos usaré Mysql. Como lenguaje utilizaré PHP con su framework Laravel en su versión 8.
 
-### Premium Partners
+ ## FrontEnd
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+    Utilizaré SASS, como preprocesador. Javascript, junto con una libreria para crear y procesar los documentos creados para los manuscritos que se llama Editor.js
+    Tambien utilizaré Jquery. Para mostrar las estadisticas de escritura del usuario utilizaré Chart.js y para las animaciones Animejs.
+    
+ ## Despliegue de la aplicación
+    Desplegar la aplicación en la nube: En que servidor en la nube vas a desplegarla?
+      -La aplicación se desplegará en el hosting Heroku
+    Dominio: Que dominio vas a utilizar (si uno gratuito, uno .es, .com?)
+      -Se utilizará el dominio www.storyfactory.com, sin ningun subdominio
+    SGBD: Vas a alojar la base de datos donde mismo que la web o en un servidor aparte?
+      -La base de datos la alojare en el mismo hosting Heroku
 
-## Contributing
+# Modelo de la base de datos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+![entidad-relacion db](https://user-images.githubusercontent.com/72388130/161332848-9ad117b3-ba8e-48d4-8212-43679e6679a8.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![esquema relacional db](https://user-images.githubusercontent.com/72388130/161332865-f8348c61-df18-41d6-acb7-22e2e6f3fc73.png)
 
-## License
+## Acceso
+  El acceso a la aplicación solo podrá ser como usuario registrado o perfil de administrador. Se podrá acceder a una landing page que ofrece información sobre la aplicación para usuarios no registrados
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  Usuarios registrados. Pueden tener acceso a todas las secciones de la aplicación. Pueden ver, actualizar, eliminar cualquier elemento creado dentro de las distintas secciones.
+
+  Administrador. Tiene acceso al listado de usuarios, no a los manuscritos creados por ellos. Puede crear, editar y eliminar usuarios. Una vez eliminado el usuario se pierden todos sus manuscritos.
+
+
+# Mockup
+
+Prototipo de la aplicación realizado en Figma
+
+[Mockup StoryFactory](https://www.figma.com/file/Ba1P0S6p4opl8Vmd3Q3Cuz/storyfactory?node-id=0%3A1)
