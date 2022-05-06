@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6b0663cfc9324887594c5e73648336e4
+class ComposerStaticInit0ef2fe5e59dc55a7914d839b9b2a07e3
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -533,11 +533,11 @@ class ComposerStaticInit6b0663cfc9324887594c5e73648336e4
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
         'App\\Models\\Chapter' => __DIR__ . '/../..' . '/app/Models/Chapter.php',
-        'App\\Models\\Character' => __DIR__ . '/../..' . '/app/Models/Character.php',
+        'App\\Models\\Figure' => __DIR__ . '/../..' . '/app/Models/Figure.php',
         'App\\Models\\Manuscript' => __DIR__ . '/../..' . '/app/Models/Manuscript.php',
         'App\\Models\\Note' => __DIR__ . '/../..' . '/app/Models/Note.php',
-        'App\\Models\\Object' => __DIR__ . '/../..' . '/app/Models/Object.php',
         'App\\Models\\Place' => __DIR__ . '/../..' . '/app/Models/Place.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -652,8 +652,17 @@ class ComposerStaticInit6b0663cfc9324887594c5e73648336e4
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\ArticleFactory' => __DIR__ . '/../..' . '/database/factories/ArticleFactory.php',
+        'Database\\Factories\\ChapterFactory' => __DIR__ . '/../..' . '/database/factories/ChapterFactory.php',
+        'Database\\Factories\\FigureFactory' => __DIR__ . '/../..' . '/database/factories/FigureFactory.php',
+        'Database\\Factories\\ManuscriptFactory' => __DIR__ . '/../..' . '/database/factories/ManuscriptFactory.php',
+        'Database\\Factories\\NoteFactory' => __DIR__ . '/../..' . '/database/factories/NoteFactory.php',
+        'Database\\Factories\\PlaceFactory' => __DIR__ . '/../..' . '/database/factories/PlaceFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\ChapterFigureSeeder' => __DIR__ . '/../..' . '/database/seeders/ChapterFigureSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\ManuscriptArticleSeeder' => __DIR__ . '/../..' . '/database/seeders/ManuscriptArticleSeeder.php',
+        'Database\\Seeders\\ManuscriptPlaceSeeder' => __DIR__ . '/../..' . '/database/seeders/ManuscriptPlaceSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5574,10 +5583,10 @@ class ComposerStaticInit6b0663cfc9324887594c5e73648336e4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6b0663cfc9324887594c5e73648336e4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6b0663cfc9324887594c5e73648336e4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6b0663cfc9324887594c5e73648336e4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit6b0663cfc9324887594c5e73648336e4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0ef2fe5e59dc55a7914d839b9b2a07e3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0ef2fe5e59dc55a7914d839b9b2a07e3::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit0ef2fe5e59dc55a7914d839b9b2a07e3::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit0ef2fe5e59dc55a7914d839b9b2a07e3::$classMap;
 
         }, null, ClassLoader::class);
     }
