@@ -10,11 +10,24 @@
 </head>
 
 <body>
-  <div class="parent">
-    <header class="header-section">
+    <div class="container">
         @include('templates.landingPage.navbar')
-    </header>
-  </div>
+        <div class="img">
+            <img src="../img/img1.jpg" alt="">
+        </div>
+        <hr>
+
+        <div class="title2">Your projects everywhere</div>
+        <div class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</div>
+        <div class="img">
+            <img src="../img/img2.png" alt="">
+        </div>
+        <hr>
+        
+    </div>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

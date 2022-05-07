@@ -1,5 +1,8 @@
-<div class="logo">
-    <svg version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
+
+
+<nav>
+    <div class="logo">
+        {{-- <svg version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
         preserveAspectRatio="xMidYMid meet" id="logo">
         <metadata id="metadata2">Created by potrace 1.15, written by Peter Selinger 2001-2017</metadata>
         <g transform="matrix(0.1,0,0,-0.1,-0.06830211,1279.818)" fill="#000000" stroke="none" id="g30">
@@ -43,5 +46,14 @@
                 d="m 2271.6253,1580 c 140,-4 291,-13 335,-20 192,-28 401,-82 485,-125 86,-43 81,-23 78,-367 l -3,-305 -27,-41 c -15,-22 -49,-54 -75,-69 l -48,-28 -878,-3 c -573,-1 -891,1 -916,8 -58,15 -116,62 -142,117 -24,47 -24,53 -24,335 v 286 l 25,28 c 48,52 224,119 430,165 113,25 352,31 760,19 z"
                 id="path28" />
         </g>
-    </svg>
-</div>
+        </svg> --}}
+
+    <div class="title">StoryFactory</div>
+    </div>
+
+    <ul>
+        <li><a href="">Register</a></li>
+        <li><a href="" id="signin">Sign In</a></li>
+    </ul>
+</nav>
+
