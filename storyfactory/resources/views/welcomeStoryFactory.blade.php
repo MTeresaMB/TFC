@@ -5,26 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    {{-- <a href='https://www.freepik.es/fotos/mujer-independiente'>Foto de mujer independiente creado por freepik - www.freepik.es</a>
+  <a href='https://www.freepik.es/fotos/mujer-escribiendo'>Foto de mujer escribiendo creado por pressfoto - www.freepik.es</a>
+  <a href='https://www.freepik.es/fotos/mujer-anciana'>Foto de mujer anciana creado por freepik - www.freepik.es</a>
+  <a href='https://www.freepik.es/fotos/trabajo-casa'>Foto de trabajo desde casa creado por Racool_studio - www.freepik.es</a>
+  <a href='https://www.freepik.es/fotos/escritorio-trabajo'>Foto de escritorio de trabajo creado por master1305 - www.freepik.es</a> --}}
+
   <link rel="stylesheet" href='{{ asset('resources\sass\app.css') }}'>
   <title>StoryFactory - Landing Page</title>
 </head>
 
 <body>
-    <div class="container">
-        @include('templates.landingPage.navbar')
-        <div class="img">
-            <img src="../img/img1.jpg" alt="">
-        </div>
-        <hr>
-
-        <div class="title2">Your projects everywhere</div>
-        <div class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</div>
-        <div class="img">
-            <img src="../img/img2.png" alt="">
-        </div>
-        <hr>
-        
-    </div>
+    <main class="main">
+        <section class="main__hero">
+            @include('.templates.landingPage.navbar')
+        </section>
+        <section>
+            {{-- <div class="img">
+                <img src="./img/img1.jpg" alt="">
+            </div>
+            <hr>
+            <p class="title2">Your projects everywhere</p>
+            <p class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</p> --}}
+        </section>
+    </main>
     <footer>
 
     </footer>

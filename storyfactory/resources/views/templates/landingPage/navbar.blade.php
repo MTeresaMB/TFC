@@ -1,10 +1,11 @@
+<nav class="main__nav container">
+    <svg class="main__hamburger" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Reorder Three</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M96 256h320M96 176h320M96 336h320"/></svg>
+    <svg class="main__logo" version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
+    preserveAspectRatio="xMidYMid meet" id="svg32" sodipodi:docname="1299326.svg"
+    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
 
-
-<nav>
-    <div class="logo">
-        {{-- <svg version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
-        preserveAspectRatio="xMidYMid meet" id="logo">
-        <metadata id="metadata2">Created by potrace 1.15, written by Peter Selinger 2001-2017</metadata>
         <g transform="matrix(0.1,0,0,-0.1,-0.06830211,1279.818)" fill="#000000" stroke="none" id="g30">
             <path
                 d="m 8876.6253,12791 c 49,-13 74,-30 81,-56 14,-55 -10,-77 -196,-179 -334,-184 -540,-375 -634,-589 -13,-29 -87,-270 -164,-537 -249,-856 -564,-1890 -570,-1871 -4,12 198,830 323,1307 225,864 285,1078 325,1161 109,232 297,414 607,589 153,88 154,94 5,74 -287,-38 -832,-234 -1721,-620 -163,-70 -356,-155 -430,-189 -74,-33 -136,-59 -138,-57 -3,3 174,97 447,238 621,319 1299,603 1685,703 106,28 318,43 380,26 z"
@@ -46,14 +47,17 @@
                 d="m 2271.6253,1580 c 140,-4 291,-13 335,-20 192,-28 401,-82 485,-125 86,-43 81,-23 78,-367 l -3,-305 -27,-41 c -15,-22 -49,-54 -75,-69 l -48,-28 -878,-3 c -573,-1 -891,1 -916,8 -58,15 -116,62 -142,117 -24,47 -24,53 -24,335 v 286 l 25,28 c 48,52 224,119 430,165 113,25 352,31 760,19 z"
                 id="path28" />
         </g>
-        </svg> --}}
-
+    </svg>
     <div class="title">StoryFactory</div>
-    </div>
-
-    <ul>
-        <li><a href="">Register</a></li>
-        <li><a href="" id="signin">Sign In</a></li>
+    <ul class="main__links">
+        <li class="main__list">
+            <a href="{{ route('register') }}" class="main__link" id="register">Register</a>
+        </li>
+        <li class="main__list">
+            <a href="{{ route('login') }}" class="main__link" id="signin">Sign In</a>
+        </li>
+        <li class="main__list">
+            <a href="" class="main__link" id="contact">Contact</a>
+        </li>
     </ul>
 </nav>
-
