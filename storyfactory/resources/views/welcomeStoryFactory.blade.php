@@ -21,7 +21,14 @@
         <section class="main__hero">
             @include('.templates.landingPage.navbar')
         </section>
-        <section>
+        <section class="main__ container">
+            <div class="main__content">
+                <h2 class="main__title">Your projects everywhere</h2>
+                <p class="main__paragraph">
+                    You can access to your projects from any of your devices, so ths inspiration never catches you unprepared
+                </p>
+                <a href="" class="main__cta">Start a new project now &nbsp;<span class="iconify" data-icon="bi:arrow-bar-right"></span></a>
+            </div>
             {{-- <div class="img">
                 <img src="./img/img1.jpg" alt="">
             </div>
@@ -29,6 +36,7 @@
             <p class="title2">Your projects everywhere</p>
             <p class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</p> --}}
         </section>
+        <div class="main__bg"></div>
     </main>
     <footer>
 
