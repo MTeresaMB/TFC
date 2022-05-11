@@ -37,6 +37,21 @@
             <p class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</p> --}}
         </section>
         <div class="main__bg"></div>
+        <section class="main__about container">
+            <div class="main__content">
+                <h3 class="main__title">Set it your way</h3>
+                <p class="main__paragraph main__paragraph--about">
+                    Configure Story Factory to make it fit your writing and stories. Organize your characters, locations and plots, and build your scenes step by step, always with your own style. Outlining will be the easiest, fastest and most fun part of your writing process.
+                </p>
+            </div>
+        </section>
+        <div class="main__bg--second"></div>
+        <section class="main__setting container">
+            <div class="main__content">
+                <h1 class="main__title">Simple to use, but with powerful features</h1>
+            </div>
+            
+        </section>
     </main>
     <footer>
 
