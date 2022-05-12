@@ -49,8 +49,42 @@
         <section class="main__setting container">
             <div class="main__content">
                 <h1 class="main__title">Simple to use, but with powerful features</h1>
+                <div class="setting-container">
+                    <div class="bulb-container">
+                        <span class="iconify" id="bulb" data-icon="ion:bulb-outline"></span>
+                    </div>
+                    <div class="bulb-container-title">Ideas Management</div>
+                    <div class="bulb-container-content">
+                        <p class="text">Turn your ideas into writing projects. Add as many projects as you want and organize it by tags.
+                        </p>
+                    </div>
+                    <div class="smart-container">
+                        <span class="iconify" id="smart" data-icon="material-symbols:share"></span>
+                    </div>
+                    <div class="smart-container-title">Smart Outlining</div>
+                    <div class="smart-container-content">
+                        <p class="text">Create characters, locations and plots for your projects. Link them to your story scenes.
+                        </p>
+                    </div>
+                    <div class="custom-container">
+                        <span class="iconify" id="custom" data-icon="wpf:settings"></span>
+                    </div>
+                    <div class="custom-container-title">Customization</div>
+                    <div class="custom-container-content">
+                        <p class="text">Modify or create new attributes for character types, scene types, narrative tension... Do it your way!
+                        </p>
+                    </div>
+                    <div class="export-container">
+                        <span class="iconify" id="export" data-icon="ph:export-duotone"></span>
+                    </div>
+                    <div class="export-container-title">Customization</div>
+                    <div class="export-container-content">
+                        <p class="text">Modify or create new attributes for character types, scene types, narrative tension... Do it your way!
+                        </p>
+                    </div>
+                </div>
             </div>
-            
+
         </section>
     </main>
     <footer>

@@ -10,6 +10,7 @@ $color-black: #2e2d2d;
 $color-title: #4d4949;
 $color-logo: #5e5656;
 $color-nav: #fff;
+$color-red: #612121;
 
 
 *{
@@ -139,24 +140,41 @@ $color-nav: #fff;
     color: #994848;
 }
 
-
-#bulb{
+.setting-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    flex-direction: column;
-    color: $color-black;
-    width: 100px;
-    height: 100px;
+    margin: 10px auto;
+    padding: 15px;
+    gap: 15px;
+}
+#bulb, #smart, #custom, #export{
+    display: flex;
+    color: $color-red;
+    width: 50px;
+    height: 50px;
 }
 
+.bulb-container-title, .smart-container-title, .custom-container-title, .export-container-title{
+    display: flex;
+    font-family: $rajdhani;
+    font-size: 24px;
+    font-weight: 700;
+}
 
+.bulb-container-content, .smart-container-content, .custom-container-content, .export-container-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    font-family: $proza;
+    font-size: 12px;
+}
 /* ----- section media queries -----*/
-@media screen and (min-width: 375px){
-    .main__logo{
-        display: none;
-    }
+@media (min-width: 375px){
+
     .title{
         display: flex;
         font-family: $courgette;
@@ -166,4 +184,32 @@ $color-nav: #fff;
         padding: 0.4em;
     }
 
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+
+    .main{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+            "main main main main cta cta cta"
+            "main main main main cta cta cta"
+            "main main main main cta cta cta"
+            "image1 image1 about about about image2 image2"
+            "image1 image1 about about about image2 image2";
+    }
+
+    .main__logo{
+        padding: 0;
+        color: $color-red;
+    }
+    .main__logo #g30{
+        fill: $color-red;
+    }
+    .main__hamburger{
+        display: none;
+    }
 }
