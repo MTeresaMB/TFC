@@ -51,3 +51,9 @@
 Prototipo de la aplicación realizado en Figma
 
 [Mockup StoryFactory](https://www.figma.com/file/Ba1P0S6p4opl8Vmd3Q3Cuz/storyfactory?node-id=0%3A1)
+
+# Checkpoint 13 de Mayo de 2022
+
+https://youtu.be/31DSqKRrycw
+
+
