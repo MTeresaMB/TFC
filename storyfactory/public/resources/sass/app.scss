@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); /* principal title*/
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap'); /* second title */
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap'); /* paragraph */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); /* principal title*/
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"); /* second title */
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"); /* paragraph */
 
-$rajdhani: 'Rajdhani', sans-serif;
-$courgette: 'Courgette', cursive;
-$proza: 'Proza Libre', sans-serif;
+$rajdhani: "Rajdhani", sans-serif;
+$courgette: "Courgette", cursive;
+$proza: "Proza Libre", sans-serif;
 $color-nav-register: #994848;
 $color-black: #2e2d2d;
 $color-title: #4d4949;
@@ -12,204 +12,52 @@ $color-logo: #5e5656;
 $color-nav: #fff;
 $color-red: #612121;
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ----- section main -----*/
-.main{
-    display: grid;
-    max-width: 1400px;
-    margin: 0 auto;
+.container {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, max-content);
-    grid-template-areas: "main" "cta" "image1" "about" "image2";
-}
+    grid-template-rows: 0.7fr 2.3fr 0.9fr 1.1fr 0.7fr 0.3fr;
+    gap: 6px 99px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav"
+      "main"
+      "your-project"
+      "photo2"
+      "setting"
+      "footer";
+  }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 60px 0;
-}
+  .nav {  display: grid;
+    grid-template-columns: 0.4fr 0.7fr 1.9fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo title blank links";
+    grid-area: nav;
+  }
 
-.main__hero{
-    grid-area: main;
-    background-image: url("../../img/img4.jpg");
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-}
+  .title { grid-area: title; }
 
-.main__nav{
-    display: flex;
-    align-items: right;
-}
+  .logo { grid-area: logo; }
 
-.main__hamburger{
-    display: flex;
-    color: $color-nav-register;
-    z-index: 100;
-    width: 50px;
-    height: 50px;
-    margin: 15px auto;
-}
+  .blank { grid-area: blank; }
 
-.main__links{display: none;}
+  .links { grid-area: links; }
 
-.main__logo{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
+  .main { grid-area: main; }
 
-.main__{
-   grid-area: cta;
-}
+  .your-project { grid-area: your-project; }
 
-.main__content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+  .photo2 { grid-area: photo2; }
 
-}
+  .setting { grid-area: setting; }
 
-.main__bg{
-    grid-area: image1;
-    min-height: 250px;
-    height: 100%;
-    background-image: url("../../img/img6.jpg");
-    background-size: cover;
-    background-position: center;
-}
+  .footer { grid-area: footer; }
 
-.main__paragraph{
-    line-height: 1.6;
-    margin: 1em 0 2em;
-    color: $color-black;
-    font-family: $proza;
-}
-
-.main__paragraph--about{
-    margin: 1em 0 0 0;
-}
-
-.main__about{
-    grid-area: about;
-}
-
-.main__bg--second{
-    grid-area: image2;
-    min-height: 250px;
-    height: 100%;
-    background-image: url("../../img/img7.jpg");
-    background-size: cover;
-    background-position: center;
-
-}
-
-.main__title{
-    color: $color-black;
-    font-family: $rajdhani;
-    font-size: 1.8em;
-    letter-spacing: 1.5px;
-}
-
-.main__cta{
-    text-decoration: none;
-    color: $color-logo;
-    text-transform: uppercase;
-    font-family: $rajdhani;
-    letter-spacing: 4px;
-}
-
-.main__cta, .iconify{
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-}
-
-.iconify{
-    color: #994848;
-}
-
-.setting-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    padding: 15px;
-    gap: 15px;
-}
-#bulb, #smart, #custom, #export{
-    display: flex;
-    color: $color-red;
-    width: 50px;
-    height: 50px;
-}
-
-.bulb-container-title, .smart-container-title, .custom-container-title, .export-container-title{
-    display: flex;
-    font-family: $rajdhani;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.bulb-container-content, .smart-container-content, .custom-container-content, .export-container-content{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.text{
-    font-family: $proza;
-    font-size: 12px;
-}
-/* ----- section media queries -----*/
-@media (min-width: 375px){
-
-    .title{
-        display: flex;
-        font-family: $courgette;
-        font-size: 2.4em;
-        color: $color-black;
-        margin: 0 auto;
-        padding: 0.4em;
-    }
-
-}
-
-@media (min-width: 768px){
-    .container{
-        width: 85%;
-        padding: 70px 0;
-    }
-
-    .main{
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-areas:
-            "main main main main cta cta cta"
-            "main main main main cta cta cta"
-            "main main main main cta cta cta"
-            "image1 image1 about about about image2 image2"
-            "image1 image1 about about about image2 image2";
-    }
-
-    .main__logo{
-        padding: 0;
-        color: $color-red;
-    }
-    .main__logo #g30{
-        fill: $color-red;
-    }
-    .main__hamburger{
-        display: none;
-    }
-}

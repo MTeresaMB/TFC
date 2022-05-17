@@ -17,76 +17,27 @@
 </head>
 
 <body>
-    <main class="main">
-        <section class="main__hero">
+    <div class="container">
+        <div class="nav"></div>
+        <div class="main"></div>
+        <div class="your-project"></div>
+        <div class="photo2"></div>
+        <div class="setting"></div>
+        <div class="footer"></div>
+    </div>
+    <div class="container">
+        <div class="nav">
             @include('.templates.landingPage.navbar')
-        </section>
-        <section class="main__ container">
-            <div class="main__content">
-                <h2 class="main__title">Your projects everywhere</h2>
-                <p class="main__paragraph">
-                    You can access to your projects from any of your devices, so ths inspiration never catches you unprepared
-                </p>
-                <a href="" class="main__cta">Start a new project now &nbsp;<span class="iconify" data-icon="bi:arrow-bar-right"></span></a>
-            </div>
-            {{-- <div class="img">
-                <img src="./img/img1.jpg" alt="">
-            </div>
-            <hr>
-            <p class="title2">Your projects everywhere</p>
-            <p class="title3">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</p> --}}
-        </section>
-        <div class="main__bg"></div>
-        <section class="main__about container">
-            <div class="main__content">
-                <h3 class="main__title">Set it your way</h3>
-                <p class="main__paragraph main__paragraph--about">
-                    Configure Story Factory to make it fit your writing and stories. Organize your characters, locations and plots, and build your scenes step by step, always with your own style. Outlining will be the easiest, fastest and most fun part of your writing process.
-                </p>
-            </div>
-        </section>
-        <div class="main__bg--second"></div>
-        <section class="main__setting container">
-            <div class="main__content">
-                <h1 class="main__title">Simple to use, but with powerful features</h1>
-                <div class="setting-container">
-                    <div class="bulb-container">
-                        <span class="iconify" id="bulb" data-icon="ion:bulb-outline"></span>
-                    </div>
-                    <div class="bulb-container-title">Ideas Management</div>
-                    <div class="bulb-container-content">
-                        <p class="text">Turn your ideas into writing projects. Add as many projects as you want and organize it by tags.
-                        </p>
-                    </div>
-                    <div class="smart-container">
-                        <span class="iconify" id="smart" data-icon="material-symbols:share"></span>
-                    </div>
-                    <div class="smart-container-title">Smart Outlining</div>
-                    <div class="smart-container-content">
-                        <p class="text">Create characters, locations and plots for your projects. Link them to your story scenes.
-                        </p>
-                    </div>
-                    <div class="custom-container">
-                        <span class="iconify" id="custom" data-icon="wpf:settings"></span>
-                    </div>
-                    <div class="custom-container-title">Customization</div>
-                    <div class="custom-container-content">
-                        <p class="text">Modify or create new attributes for character types, scene types, narrative tension... Do it your way!
-                        </p>
-                    </div>
-                    <div class="export-container">
-                        <span class="iconify" id="export" data-icon="ph:export-duotone"></span>
-                    </div>
-                    <div class="export-container-title">Customization</div>
-                    <div class="export-container-content">
-                        <p class="text">Modify or create new attributes for character types, scene types, narrative tension... Do it your way!
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </main>
+          {{-- <div class="main__links"></div>
+          <div class="title"></div>
+          <div class="nav__logo"></div> --}}
+        </div>
+        <div class="main"></div>
+        <div class="your-project"></div>
+        <div class="photo2"></div>
+        <div class="setting"></div>
+        <div class="footer"></div>
+      </div>
     <footer>
 
     </footer>

@@ -11,248 +11,85 @@
           box-sizing: border-box;
 }
 
-/* ----- section main -----*/
-.main {
+.container {
   display: -ms-grid;
   display: grid;
-  max-width: 1400px;
-  margin: 0 auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (max-content)[5];
-      grid-template-rows: repeat(5, -webkit-max-content);
-      grid-template-rows: repeat(5, max-content);
-      grid-template-areas: "main" "cta" "image1" "about" "image2";
+  -ms-grid-rows: 0.7fr 2.3fr 0.9fr 1.1fr 0.7fr 0.3fr;
+      grid-template-rows: 0.7fr 2.3fr 0.9fr 1.1fr 0.7fr 0.3fr;
+  gap: 6px 99px;
+  grid-auto-flow: row;
+      grid-template-areas: "nav" "main" "your-project" "photo2" "setting" "footer";
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 60px 0;
-}
-
-.main__hero {
+.nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4fr 0.7fr 1.9fr 1fr;
+      grid-template-columns: 0.4fr 0.7fr 1.9fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "logo title blank links";
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: main;
-  background-image: url("../../img/img4.jpg");
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
+  grid-area: nav;
 }
 
-.main__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
 }
 
-.main__hamburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #994848;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  margin: 15px auto;
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
 }
 
-.main__links {
-  display: none;
+.blank {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: blank;
 }
 
-.main__logo {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+.links {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: links;
 }
 
-.main__ {
+.main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: cta;
+  grid-area: main;
 }
 
-.main__content {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main__bg {
+.your-project {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: image1;
-  min-height: 250px;
-  height: 100%;
-  background-image: url("../../img/img6.jpg");
-  background-size: cover;
-  background-position: center;
+  grid-area: your-project;
 }
 
-.main__paragraph {
-  line-height: 1.6;
-  margin: 1em 0 2em;
-  color: #2e2d2d;
-  font-family: "Proza Libre", sans-serif;
-}
-
-.main__paragraph--about {
-  margin: 1em 0 0 0;
-}
-
-.main__about {
+.photo2 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  grid-area: about;
+  grid-area: photo2;
 }
 
-.main__bg--second {
+.setting {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  grid-area: image2;
-  min-height: 250px;
-  height: 100%;
-  background-image: url("../../img/img7.jpg");
-  background-size: cover;
-  background-position: center;
+  grid-area: setting;
 }
 
-.main__title {
-  color: #2e2d2d;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 1.8em;
-  letter-spacing: 1.5px;
-}
-
-.main__cta {
-  text-decoration: none;
-  color: #5e5656;
-  text-transform: uppercase;
-  font-family: "Rajdhani", sans-serif;
-  letter-spacing: 4px;
-}
-
-.main__cta, .iconify {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.iconify {
-  color: #994848;
-}
-
-.setting-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px auto;
-  padding: 15px;
-  gap: 15px;
-}
-
-#bulb, #smart, #custom, #export {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #612121;
-  width: 50px;
-  height: 50px;
-}
-
-.bulb-container-title, .smart-container-title, .custom-container-title, .export-container-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.bulb-container-content, .smart-container-content, .custom-container-content, .export-container-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.text {
-  font-family: "Proza Libre", sans-serif;
-  font-size: 12px;
-}
-
-/* ----- section media queries -----*/
-@media (min-width: 375px) {
-  .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: "Courgette", cursive;
-    font-size: 2.4em;
-    color: #2e2d2d;
-    margin: 0 auto;
-    padding: 0.4em;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 85%;
-    padding: 70px 0;
-  }
-  .main {
-    -ms-grid-columns: (1fr)[7];
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-areas: "main main main main cta cta cta" "main main main main cta cta cta" "main main main main cta cta cta" "image1 image1 about about about image2 image2" "image1 image1 about about about image2 image2";
-  }
-  .main__logo {
-    padding: 0;
-    color: #612121;
-  }
-  .main__logo #g30 {
-    fill: #612121;
-  }
-  .main__hamburger {
-    display: none;
-  }
+.footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: footer;
 }
 /*# sourceMappingURL=app.css.map */
