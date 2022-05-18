@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"); /* second title */
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"); /* paragraph */
 
+/* ----variables fonts----*/
+
 $rajdhani: "Rajdhani", sans-serif;
 $courgette: "Courgette", cursive;
 $proza: "Proza Libre", sans-serif;
+
+/*----variables colors----*/
 $color-nav-register: #994848;
 $color-black: #2e2d2d;
 $color-title: #4d4949;
@@ -18,10 +22,11 @@ $color-red: #612121;
     box-sizing: border-box;
 }
 
-.container {  display: grid;
+.container {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 2.3fr 0.9fr 1.1fr 0.7fr 0.3fr;
-    gap: 6px 99px;
+    grid-template-rows: 0.7fr 6.5fr 1.5fr 1.1fr 0.7fr 0.3fr;
+    gap: 20px 100px;
     grid-auto-flow: row;
     grid-template-areas:
       "nav"
@@ -30,34 +35,86 @@ $color-red: #612121;
       "photo2"
       "setting"
       "footer";
-  }
+}
 
-  .nav {  display: grid;
-    grid-template-columns: 0.4fr 0.7fr 1.9fr 1fr;
+.nav {
+    display: grid;
+    grid-template-columns: 0.2fr 0.7fr 1.9fr 1fr;
     grid-template-rows: 1fr;
     grid-auto-columns: 1fr;
-    gap: 0px 0px;
+    gap: 6px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "logo title blank links";
+        "logo title blank links";
     grid-area: nav;
-  }
+    margin: 10px;
+}
 
-  .title { grid-area: title; }
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-family: $courgette;
+    font-size: 35px;
+}
 
-  .logo { grid-area: logo; }
+.logo {
+    grid-area: logo;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 
-  .blank { grid-area: blank; }
+}
 
-  .links { grid-area: links; }
+.blank { grid-area: blank; }
 
-  .main { grid-area: main; }
+.links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.main__list {
+    list-style: none;
+}
+.main__link{
+    text-decoration: none;
+    font-family: $rajdhani;
+    font-size: 22px;
+    color: $color-black;
+}
+.main__list #register{color: $color-nav-register;}
+.main {
+    grid-area: main;
+    background-image: url('../../img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.your-project {
+    grid-area: your-project;
+}
+.title-project{
+    text-align: center;
+    margin: 10px;
+    font-size: 42px;
+    font-family: $rajdhani;
+    font-weight: medium;
+    letter-spacing: 10px;
+}
+.text-project{
+    text-align: center;
+    font-size: 18px;
+    font-family: $proza;
+    letter-spacing: 5px;
+    color: $color-title;
+}
+.photo2 { grid-area: photo2; }
 
-  .your-project { grid-area: your-project; }
+.setting { grid-area: setting; }
 
-  .photo2 { grid-area: photo2; }
-
-  .setting { grid-area: setting; }
-
-  .footer { grid-area: footer; }
+.footer { grid-area: footer; }
 

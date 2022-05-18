@@ -18,22 +18,15 @@
 
 <body>
     <div class="container">
-        <div class="nav"></div>
-        <div class="main"></div>
-        <div class="your-project"></div>
-        <div class="photo2"></div>
-        <div class="setting"></div>
-        <div class="footer"></div>
-    </div>
-    <div class="container">
         <div class="nav">
             @include('.templates.landingPage.navbar')
-          {{-- <div class="main__links"></div>
-          <div class="title"></div>
-          <div class="nav__logo"></div> --}}
         </div>
         <div class="main"></div>
-        <div class="your-project"></div>
+
+        <div class="your-project">
+            <div class="title-project">Your projects everywhere</div>
+            <div class="text-project">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</div>
+        </div>
         <div class="photo2"></div>
         <div class="setting"></div>
         <div class="footer"></div>

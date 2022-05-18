@@ -1,12 +1,12 @@
 
 {{-- <svg class="main__hamburger" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Reorder Three</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M96 256h320M96 176h320M96 336h320"/></svg> --}}
-<svg class="nav__logo" version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
+<svg class="logo" version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
 preserveAspectRatio="xMidYMid meet" id="svg32" sodipodi:docname="1299326.svg"
 inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
 xmlns:svg="http://www.w3.org/2000/svg">
 
-    <g transform="matrix(0.1,0,0,-0.1,-0.06830211,1279.818)" fill="#000000" stroke="none" id="g30">
+    <g transform="matrix(0.1,0,0,-0.1,-0.06830211,1279.818)" fill="#612121" stroke="none" id="g30">
         <path
             d="m 8876.6253,12791 c 49,-13 74,-30 81,-56 14,-55 -10,-77 -196,-179 -334,-184 -540,-375 -634,-589 -13,-29 -87,-270 -164,-537 -249,-856 -564,-1890 -570,-1871 -4,12 198,830 323,1307 225,864 285,1078 325,1161 109,232 297,414 607,589 153,88 154,94 5,74 -287,-38 -832,-234 -1721,-620 -163,-70 -356,-155 -430,-189 -74,-33 -136,-59 -138,-57 -3,3 174,97 447,238 621,319 1299,603 1685,703 106,28 318,43 380,26 z"
             id="path4" />
@@ -49,7 +49,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
     </g>
 </svg>
 <div class="title">StoryFactory</div>
-<ul class="main__links">
+<ul class="links">
     <li class="main__list">
         <a href="{{ route('register') }}" class="main__link" id="register">Register</a>
     </li>
