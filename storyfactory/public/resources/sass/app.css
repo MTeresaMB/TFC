@@ -18,11 +18,11 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 0.7fr 6.5fr 1.5fr 1.1fr 0.7fr 0.3fr;
-      grid-template-rows: 0.7fr 6.5fr 1.5fr 1.1fr 0.7fr 0.3fr;
+  -ms-grid-rows: 0.7fr 6.5fr 2fr 6.5fr 4fr 2fr 0.3fr;
+      grid-template-rows: 0.7fr 6.5fr 2fr 6.5fr 4fr 2fr 0.3fr;
   gap: 20px 100px;
   grid-auto-flow: row;
-      grid-template-areas: "nav" "main" "your-project" "photo2" "setting" "footer";
+      grid-template-areas: "nav" "main" "your-project" "photo2" "video" "setting" "footer";
 }
 
 .nav {
@@ -143,20 +143,63 @@
   color: #4d4949;
 }
 
+.link-register {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 5px;
+  color: #4d4949;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.link-register .iconify {
+  position: absolute;
+  margin: 3px;
+  color: #612121;
+}
+
+.link-register a {
+  text-decoration: none;
+  color: #2e2d2d;
+}
+
+.link-register a:hover {
+  color: #994848;
+}
+
 .photo2 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: photo2;
+  background-image: url("../../img/img5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.video {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: video;
+}
+
+hr {
+  padding: 15px;
+}
+
+.video iframe {
+  display: block;
+  margin: 20px auto;
 }
 
 .setting {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: setting;
 }
 
 .footer {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: footer;
 }

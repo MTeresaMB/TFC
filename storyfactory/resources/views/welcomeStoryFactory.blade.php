@@ -2,38 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     {{-- <a href='https://www.freepik.es/fotos/mujer-independiente'>Foto de mujer independiente creado por freepik - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/mujer-escribiendo'>Foto de mujer escribiendo creado por pressfoto - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/mujer-anciana'>Foto de mujer anciana creado por freepik - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/trabajo-casa'>Foto de trabajo desde casa creado por Racool_studio - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/escritorio-trabajo'>Foto de escritorio de trabajo creado por master1305 - www.freepik.es</a> --}}
 
-  <link rel="stylesheet" href='{{ asset('resources\sass\app.css') }}'>
-  <title>StoryFactory - Landing Page</title>
+    <link rel="stylesheet" href='{{ asset('resources\sass\app.css') }}'>
+    <title>StoryFactory - Landing Page</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            @include('.templates.landingPage.navbar')
-        </div>
-        <div class="main"></div>
+  <div class="container">
+    <div class="nav">
+        @include('.templates.landingPage.navbar')
+    </div>
+    <div class="main"></div>
 
-        <div class="your-project">
-            <div class="title-project">Your projects everywhere</div>
-            <div class="text-project">You can access to your projects from any of your devices, so ths inspiration never catches you unprepared</div>
+    <div class="your-project">
+        <hr>
+        <div class="title-project">Your projects everywhere</div>
+        <div class="text-project">You can access to your projects from any of your devices, so ths inspiration
+            never catches you unprepared
         </div>
-        <div class="photo2"></div>
-        <div class="setting"></div>
-        <div class="footer"></div>
-      </div>
-    <footer>
+        <div class="link-register"><a href="#">Create a new project now&nbsp;<span class="iconify" data-icon="bi:arrow-bar-right"></span></a></div>
+        <hr>
+    </div>
+    <div class="photo2"></div>
+    <div class="video">
+        <hr>
+        <div class="title-project">Welcome to Story Factory</div>
+        <div class="text-project">Story Factory accompanies you when building your story, from the idea until you are ready to write your draft.</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JngmBhiKto4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+    </div>
+    <div class="setting">
+        <div class="title-project">Simple to use, but with powerful features</div>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>

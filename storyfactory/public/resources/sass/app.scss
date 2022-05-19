@@ -25,16 +25,10 @@ $color-red: #612121;
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 6.5fr 1.5fr 1.1fr 0.7fr 0.3fr;
+    grid-template-rows: 0.7fr 6.5fr 2fr 6.5fr 4fr 2fr 0.3fr;
     gap: 20px 100px;
     grid-auto-flow: row;
-    grid-template-areas:
-      "nav"
-      "main"
-      "your-project"
-      "photo2"
-      "setting"
-      "footer";
+    grid-template-areas: "nav" "main" "your-project" "photo2" "video" "setting" "footer";
 }
 
 .nav {
@@ -44,8 +38,7 @@ $color-red: #612121;
     grid-auto-columns: 1fr;
     gap: 6px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "logo title blank links";
+    grid-template-areas: "logo title blank links";
     grid-area: nav;
     margin: 10px;
 }
@@ -66,10 +59,11 @@ $color-red: #612121;
     display: flex;
     align-items: center;
     justify-items: center;
-
 }
 
-.blank { grid-area: blank; }
+.blank {
+    grid-area: blank;
+}
 
 .links {
     grid-area: links;
@@ -81,23 +75,25 @@ $color-red: #612121;
 .main__list {
     list-style: none;
 }
-.main__link{
+.main__link {
     text-decoration: none;
     font-family: $rajdhani;
     font-size: 22px;
     color: $color-black;
 }
-.main__list #register{color: $color-nav-register;}
+.main__list #register {
+    color: $color-nav-register;
+}
 .main {
     grid-area: main;
-    background-image: url('../../img/img1.jpg');
+    background-image: url("../../img/img1.jpg");
     background-size: cover;
     background-position: center;
 }
 .your-project {
     grid-area: your-project;
 }
-.title-project{
+.title-project {
     text-align: center;
     margin: 10px;
     font-size: 42px;
@@ -105,16 +101,52 @@ $color-red: #612121;
     font-weight: medium;
     letter-spacing: 10px;
 }
-.text-project{
+.text-project {
     text-align: center;
     font-size: 18px;
     font-family: $proza;
     letter-spacing: 5px;
     color: $color-title;
 }
-.photo2 { grid-area: photo2; }
+.link-register {
+    text-align: center;
+    font-size: 18px;
+    font-family: $rajdhani;
+    letter-spacing: 5px;
+    color: $color-title;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.link-register .iconify{
+    position: absolute;
+    margin: 3px;
+    color: $color-red;
+}
+.link-register a{
+    text-decoration: none;
+    color: $color-black;
+}
+.link-register a:hover{color: #994848;}
+.photo2 {
+    grid-area: photo2;
+    background-image: url('../../img/img5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.video{
+    grid-area: video;
+}
+hr{
+    padding: 15px;
+}
+.video iframe{
+    display: block;
+    margin: 20px auto;
+}
+.setting {
+    grid-area: setting;
+}
 
-.setting { grid-area: setting; }
-
-.footer { grid-area: footer; }
-
+.footer {
+    grid-area: footer;
+}
