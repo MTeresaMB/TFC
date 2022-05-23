@@ -1,5 +1,5 @@
 
-{{-- <svg class="main__hamburger" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Reorder Three</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M96 256h320M96 176h320M96 336h320"/></svg> --}}
+{{-- <svg xmlns="http://www.w3.org/2000/svg" class="burger" viewBox="0 0 512 512"><title>Menu</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg> --}}
 <svg class="logo" version="1.0" width="896.02594pt" height="1279.3572pt" viewBox="0 0 896.02594 1279.3572"
 preserveAspectRatio="xMidYMid meet" id="svg32" sodipodi:docname="1299326.svg"
 inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"

@@ -12,7 +12,7 @@
   <a href='https://www.freepik.es/fotos/trabajo-casa'>Foto de trabajo desde casa creado por Racool_studio - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/escritorio-trabajo'>Foto de escritorio de trabajo creado por master1305 - www.freepik.es</a> --}}
 
-    <link rel="stylesheet" href='{{ asset('resources\sass\app.css') }}'>
+    <link rel="stylesheet" href='{{ asset('resources\sass\landingPage.css') }}'>
     <title>StoryFactory - Landing Page</title>
 </head>
 
@@ -22,39 +22,80 @@
         @include('.templates.landingPage.navbar')
     </div>
     <div class="main"></div>
-
-    <div class="your-project">
-        <hr>
-        <div class="title-project">Your projects everywhere</div>
-        <div class="text-project">You can access to your projects from any of your devices, so ths inspiration
-            never catches you unprepared
+        <div class="yourProject">
+            <div class="photo2"></div>
+            <div class="text2">
+                <div class="title-project1">Your projects everywhere</div>
+                <div class="text-project1">You can access to your projects from any of your devices, so ths inspiration
+                    never catches you unprepared
+                </div>
+                <div class="link-register"><a href="#">Create a new project now&nbsp;<span class="iconify" data-icon="bi:arrow-bar-right"></span></a></div>
+            </div>
         </div>
-        <div class="link-register"><a href="#">Create a new project now&nbsp;<span class="iconify" data-icon="bi:arrow-bar-right"></span></a></div>
-        <hr>
-    </div>
-    <div class="photo2"></div>
     <div class="video">
-        <hr>
-        <div class="title-project">Welcome to Story Factory</div>
-        <div class="text-project">Story Factory accompanies you when building your story, from the idea until you are ready to write your draft.</div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JngmBhiKto4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <hr>
+        <div class="title-project2">Welcome to Story Factory</div>
+        <div class="text-project2">Story Factory accompanies you when building your story, from the idea until you are ready to write your draft.</div>
+        <iframe src="https://www.youtube.com/embed/JngmBhiKto4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="setting">
-        <div class="title-project">Simple to use, but with powerful features</div>
+        <div class="title-project3">Simple to use, but with powerful features
+            <div class="icons">
+                <div class="ideas">
+                    <div class="ideas-manage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="ideas-manage-title">Ideas Management</div>
+                    <div class="ideas-manage-text">Turn your ideas into writing projects. Add as many projects as you want and organize it by tags.
+                    </div>
+
+                </div>
+                <div class="outlining">
+                    <div class="outlining-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Share Social</title><circle cx="128" cy="256" r="48" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="384" cy="112" r="48" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="384" cy="400" r="48" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M169.83 279.53l172.34 96.94M342.17 135.53l-172.34 96.94"/></svg>
+                    </div>
+                    <div class="outlining-title">Smart Outlining</div>
+                    <div class="outlining-text">Create characters,
+                        locations and plots for
+                        yours projects. Link them
+                        to your story scenes.</div>
+                </div>
+                <div class="custom">
+                    <div class="custom-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Settings</title><path d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32">
+                        </svg>
+                    </div>
+                    <div class="custom-title">Customization</div>
+                    <div class="custom-text">Modify or create new attributes for character
+                        types, scene types, narrative tension...Do it your way!
+                    </div>
+                </div>
+                <div class="export">
+                    <div class="export-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Share</title><path d="M336 192h40a40 40 0 0140 40v192a40 40 0 01-40 40H136a40 40 0 01-40-40V232a40 40 0 0140-40h40M336 128l-80-80-80 80M256 321V48" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="export-title">Projects Exportation</div>
+                    <div class="export-text">Print or export your projects to .doc, .txt and .pdf</div>
+                </div>
+                <div class="organize">
+                    <div class="organize-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Bar Chart</title><path d="M32 32v432a16 16 0 0016 16h432" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" fill="none" stroke="#612121" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="organize-title">Ideas Organization</div>
+                    <div class="organize-text">Forget the plots holes. Write better stories thanks to the statistics of Story Planner.</div>
+                </div>
+            </div>
+        </div>
+        <div class="photo"></div>
     </div>
-    <div class="footer"></div>
   </div>
   <footer>
-
+    <div class="footer">
+        
+    </div>
   </footer>
 </body>
 
 </html>
-
-
-
-
 
 
 
