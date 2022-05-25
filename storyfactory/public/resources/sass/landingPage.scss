@@ -15,6 +15,7 @@ $color-title: #4d4949;
 $color-logo: #5e5656;
 $color-nav: #fff;
 $color-red: #612121;
+$background-video: #EECCC4;
 
 * {
     margin: 0;
@@ -25,7 +26,7 @@ $color-red: #612121;
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas: "nav" "main" "yourProject" "video" "setting" "footer";
 }
@@ -124,14 +125,14 @@ $color-red: #612121;
     font-family: $rajdhani;
     font-weight: medium;
     letter-spacing: 10px;
-    color: $color-nav;
+    color: $color-black;
 }
 .text-project2 {
     text-align: center;
     font-size: 18px;
     font-family: $proza;
     letter-spacing: 5px;
-    color: $color-nav;
+    color: $color-black;
 }
 .title-project3 {
     text-align: center;
@@ -153,7 +154,7 @@ $color-red: #612121;
 .link-register .iconify {
     position: absolute;
     margin: 3px;
-    color: $color-red;
+    color: #39415B;
 }
 .link-register a {
     text-decoration: none;
@@ -173,7 +174,7 @@ $color-red: #612121;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background: $color-nav-register;
+    background: $background-video;
 }
 .video iframe {
     display: block;
@@ -369,17 +370,35 @@ $color-red: #612121;
     min-height: 300px;
 }
 .footer {
+    background: $background-video;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "container-footer" "text-footer";
+    color: $color-black;
     grid-area: footer;
 }
-
+.footer a{
+    grid-area: container-footer;
+    text-decoration: none;
+    color: #793246;
+    font-size: 20px;
+    font-family: $rajdhani;
+    font-weight: 700;
+}
+.footer p{
+    grid-area: text-footer;
+    font-size: 20px;
+    font-family: $rajdhani;
+}
 
 /*---- Media Queries ----*/
 
-@media sreen and (min-width: 375px) and (max-width: 768px) {
-    .video iframe {
-        display: block;
-        margin: 20px auto;
-        width: 560px;
-        height: 315px;
-    }
-}
+// @media sreen and (min-width: 375px) and (max-width: 768px) {
+//     .video iframe {
+//         display: block;
+//         margin: 20px auto;
+//         width: 560px;
+//         height: 315px;
+//     }
+// }
