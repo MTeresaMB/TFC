@@ -18,10 +18,10 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 0.1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
-  grid-auto-flow: row;
-      grid-template-areas: "nav" "main" "yourProject" "video" "setting" "footer";
+  -ms-grid-rows: 0fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0fr 1fr 1fr 1fr 1fr;
+  gap: 0px 99px;
+      grid-template-areas: "nav" "main" "yourProject" "video" "setting";
 }
 
 .nav {
@@ -515,39 +515,31 @@
   min-height: 300px;
 }
 
-.footer {
+.container-footer {
+  text-align: center;
   background: #EECCC4;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "container-footer" "text-footer";
   color: #2e2d2d;
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: footer;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: container-footer;
+.container-footer .text-footer a {
   text-decoration: none;
-  color: #793246;
-  font-size: 20px;
+  color: #612121;
   font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
+  font-size: 20px;
 }
 
-.footer p {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: text-footer;
-  font-size: 20px;
-  font-family: "Rajdhani", sans-serif;
+.container-footer .text-footer {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 18px;
 }
-
-/*---- Media Queries ----*/
 /*# sourceMappingURL=landingPage.css.map */
