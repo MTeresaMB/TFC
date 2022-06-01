@@ -50,7 +50,7 @@ $background-video: #EECCC4;
 }
 .main {
     grid-area: main;
-    background-image: url("../../img/img1.jpg");
+    background-image: url("/../../img/img1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -129,7 +129,7 @@ $background-video: #EECCC4;
 }
 .photo2 {
     grid-area: photo2;
-    background-image: url("../../img/img5.jpg");
+    background-image: url("/../../img/img5.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -328,7 +328,7 @@ $background-video: #EECCC4;
 }
 .photo {
     grid-area: photo;
-    background-image: url(../../img/img6.jpg);
+    background-image: url('/../../img/img6.jpg');
     background-position: center;
     background-size: cover;
     min-height: 300px;

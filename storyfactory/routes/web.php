@@ -24,7 +24,7 @@ Route::get('/dashboard', function () {
 
 
 Route::get('/signin', function () {
-    return view('login/index');
+    return view('login/login');
 })->name('signin');
 
 Route::get('/signup', function () {

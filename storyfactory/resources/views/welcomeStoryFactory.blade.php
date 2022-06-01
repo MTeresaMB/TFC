@@ -13,6 +13,7 @@
   <a href='https://www.freepik.es/fotos/escritorio-trabajo'>Foto de escritorio de trabajo creado por master1305 - www.freepik.es</a> --}}
 
     <link rel="stylesheet" href='{{ asset('resources\sass\landingPage\landingPage.css') }}'>
+    <link rel="stylesheet" href='{{ asset('resources\sass\navbar\navbar.css') }}'>
     <title>StoryFactory - Landing Page</title>
 </head>
 
@@ -29,7 +30,7 @@
                 <div class="text-project1">You can access to your projects from any of your devices, so ths inspiration
                     never catches you unprepared
                 </div>
-                <div class="link-register"><a href="#">Create a new project now&nbsp;<span class="iconify"
+                <div class="link-register"><a href="{{ route('login') }}">Create a new project now&nbsp;<span class="iconify"
                             data-icon="bi:arrow-bar-right"></span></a></div>
             </div>
         </div>
