@@ -13,6 +13,7 @@
     <div class="login-box">
         <h2 class="login-box-title">Login</h2>
         <form action="{{ route('login') }}" method="post">
+            @csrf
             <div class="user-box">
                 <input type="email" name="email" required>
                 <label>Email address</label>
@@ -22,7 +23,7 @@
                 <label>Password</label>
             </div>
             <div class="user-box">
-                <div><a href="{{ route('register') }}" class="register">Already registered? Sign In</a></div>
+                <div><a href="{{ route('register') }}" class="register">Create an account, Sign up</a></div>
 
             </div>
             <a href="#">
@@ -30,7 +31,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                Submit
+                Enter
             </a>
         </form>
     </div>
