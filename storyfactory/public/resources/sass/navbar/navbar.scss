@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); /* principal title*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"); /* second title */
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"); /* paragraph */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); /*title app */
+
+$dancing-script: "Dancing Script", cursive;
 
 
 $rajdhani: "Rajdhani", sans-serif;
-$courgette: "Courgette", cursive;
 $proza: "Proza Libre", sans-serif;
 
 /*----variables colors----*/
@@ -52,8 +53,8 @@ $background-video: #EECCC4;
     display: flex;
     align-items: center;
     justify-items: center;
-    font-family: $courgette;
-    font-size: 35px;
+    font-family: $dancing-script;
+    font-size: 3rem;
 }
 
 .logo {
@@ -63,6 +64,7 @@ $background-video: #EECCC4;
     display: flex;
     align-items: center;
     justify-items: center;
+    
 }
 
 .blank {
@@ -73,6 +75,6 @@ $background-video: #EECCC4;
     grid-area: links;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }

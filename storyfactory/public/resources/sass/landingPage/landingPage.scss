@@ -167,11 +167,10 @@ $background-video: #EECCC4;
 .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 15px 20px;
     grid-template-areas:
-        "ideas outlining custom"
-        "export export organize";
+        "ideas outlining export";
     grid-area: icons;
     padding: 10px;
 }
@@ -236,36 +235,7 @@ $background-video: #EECCC4;
     height: 80px;
 }
 
-.custom {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr 0fr 1fr;
-    gap: 20px 0px;
-    grid-template-areas:
-        "custom-icon"
-        "custom-title"
-        "custom-text";
-    grid-area: custom;
-    justify-items: center;
-    align-items: start;
-}
-.custom-title {
-    grid-area: custom-title;
-    font-size: 18px;
-    font-family: $rajdhani;
-    font-weight: 700;
-}
-.custom-text {
-    grid-area: custom-text;
-    font-size: 12px;
-    font-family: $proza;
 
-}
-.custom-icon {
-    grid-area: custom-icon;
-    width: 80px;
-    height: 80px;
-}
 .export {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,36 +266,7 @@ $background-video: #EECCC4;
     width: 80px;
     height: 80px;
 }
-.organize {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr 0fr 1fr;
-    gap: 20px 0px;
-    grid-template-areas:
-        "organize-icon"
-        "organize-title"
-        "organize-text";
-    grid-area: organize;
-    justify-items: center;
-    align-items: start;
-}
-.organize-title {
-    grid-area: organize-title;
-    font-size: 18px;
-    font-family: $rajdhani;
-    font-weight: 700;
-}
-.organize-text {
-    grid-area: organize-text;
-    font-size: 12px;
-    font-family: $proza;
 
-}
-.organize-icon {
-    grid-area: organize-icon;
-    width: 80px;
-    height: 80px;
-}
 .photo {
     grid-area: photo;
     background-image: url('/../../img/img6.jpg');

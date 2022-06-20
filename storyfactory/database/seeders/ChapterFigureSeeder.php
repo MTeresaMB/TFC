@@ -19,7 +19,7 @@ class ChapterFigureSeeder extends Seeder
         for($i = 0; $i < 1; $i++){
             DB::table('chapter_has_figure')->insert([
                 'id_chapter'=>$faker->numberBetween(1,10),
-                'id_figure'=>$faker->numberBetween(1,10),
+                'id_figure'=>$faker->unique()->numberBetween(1,10),
             ]);
         }
     }

@@ -15,6 +15,7 @@ class ArticleFactory extends Factory
     {
         return [
             'id_article'=>$this->faker->numberBetween(1,50),
+            'id_user'=>$this->faker->numberBetween(1,20),
             'name'=>$this->faker->word,
             'description'=>$this->faker->sentence(),
         ];

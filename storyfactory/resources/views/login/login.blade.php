@@ -26,13 +26,13 @@
                 <div><a href="{{ route('register') }}" class="register">Create an account, Sign up</a></div>
 
             </div>
-            <a href="#">
+            <button>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Enter
-            </a>
+            </button>
         </form>
     </div>
 </body>

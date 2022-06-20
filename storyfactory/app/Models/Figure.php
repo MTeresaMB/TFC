@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Figure extends Model
 {
     use HasFactory;
-    protected $id = 'id_figure';
+    protected $primaryKey = 'id_figure';
     protected $table = 'figure';
+
+    
+
     protected $fillable = [
         'nameFigure',
         'biography',
@@ -27,4 +30,10 @@ class Figure extends Model
         'eye_color',
         'scars',
     ];
+
+    
+public function chapters() {
+      return $this->belongsToMany('App\Models\Chapter',"chapter_has_figure","id_figure","id_chapter");
+    }
+
 }

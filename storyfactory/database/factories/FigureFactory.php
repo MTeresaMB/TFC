@@ -15,6 +15,7 @@ class FigureFactory extends Factory
     {
         return [
             'id_figure'=>$this->faker->numberBetween(1,50),
+            'id_user'=>$this->faker->numberBetween(1,20),
             'nameFigure'=>$this->faker->name,
             'biography'=>$this->faker->sentence(),
             'role'=>$this->faker->word,

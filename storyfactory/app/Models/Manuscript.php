@@ -14,7 +14,7 @@ class Manuscript extends Model
      *
      * @var array<int, string>
      */
-    protected $id = 'id_manuscript';
+    protected $primaryKey = 'id_manuscript';
     protected $table = 'manuscript';
     protected $fillable = [
         'title',

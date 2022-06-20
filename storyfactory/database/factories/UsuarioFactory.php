@@ -6,7 +6,7 @@ use \App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
-class UserFactory extends Factory
+class UsuarioFactory extends Factory
 {
 
     /**
@@ -18,13 +18,13 @@ class UserFactory extends Factory
     {
         return [
             'id_user'=>$this->faker->numberBetween(1,20),
+            "caracteres" => $this->faker->numberBetween(1,10),
             'username' => $this->faker->username,
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => Hash::make('12345678'), // password
+            'password' => Hash::make('12'), // password
             'remember_token' => Str::random(10),
-            'avatar'=>$this->faker->sentence(),
-            'is_admin'=>$this->faker->numberBetween(0,1),
+            'is_admin'=>$this->faker->numberBetween(1,1),
         ];
     }
 

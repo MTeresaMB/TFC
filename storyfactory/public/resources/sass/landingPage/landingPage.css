@@ -208,10 +208,10 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0fr 1fr;
-      grid-template-rows: 0fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 15px 20px;
-      grid-template-areas: "ideas outlining custom" "export export organize";
+      grid-template-areas: "ideas outlining export";
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: icons;
@@ -304,49 +304,6 @@
   height: 80px;
 }
 
-.custom {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 0fr 0fr 1fr;
-      grid-template-rows: 0fr 0fr 1fr;
-  gap: 20px 0px;
-      grid-template-areas: "custom-icon" "custom-title" "custom-text";
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: custom;
-  justify-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-.custom-title {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: custom-title;
-  font-size: 18px;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-}
-
-.custom-text {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: custom-text;
-  font-size: 12px;
-  font-family: "Proza Libre", sans-serif;
-}
-
-.custom-icon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: custom-icon;
-  width: 80px;
-  height: 80px;
-}
-
 .export {
   display: -ms-grid;
   display: grid;
@@ -356,9 +313,8 @@
       grid-template-rows: 0fr 0fr 1fr;
   gap: 20px 0px;
       grid-template-areas: "export-icon" "export-title" "export-text";
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: export;
   justify-items: center;
   -webkit-box-align: start;
@@ -387,49 +343,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: export-icon;
-  width: 80px;
-  height: 80px;
-}
-
-.organize {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 0fr 0fr 1fr;
-      grid-template-rows: 0fr 0fr 1fr;
-  gap: 20px 0px;
-      grid-template-areas: "organize-icon" "organize-title" "organize-text";
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: organize;
-  justify-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-.organize-title {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: organize-title;
-  font-size: 18px;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-}
-
-.organize-text {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: organize-text;
-  font-size: 12px;
-  font-family: "Proza Libre", sans-serif;
-}
-
-.organize-icon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: organize-icon;
   width: 80px;
   height: 80px;
 }

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap");
+
+$dancing-script: "Dancing Script", cursive;
+$athiti: "Athiti", sans-serif;
+
+/*----variables colors----*/
+$sidebar-color: #2c354d;
+$primary-color: #695cfe;
+$primary-color-light: #f6f5ff;
+$text-color: #ffffff;
+$body-color: #fdfdfd;
+$hover-color: #a0576d;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: $body-color;
+}
+
+/*====== Sidebar ==========*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        'sidenav'
+        'header'
+        'main'
+        'footer';
+    height: 100vh;
+  }
+
+.sidenav {
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    overflow-y: auto;
+    transform: translateX(-245px);
+    transition: all .6s ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 2; /* Needs to sit above the hamburger menu icon */
+    background-color: #394263;
+  }
+  
+  .sidenav.active {
+    transform: translateX(0);
+  }
+  
+  .sidenav__close-icon {
+    position: absolute;
+    visibility: visible;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+  }
+  
+  .sidenav__list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+  
+  .sidenav__list-item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+        a.link{
+            display: flex;
+            gap: 0.5em;
+            padding: 10px;
+            text-decoration: none;
+            font-family: $athiti;
+            color: #ffffff;
+            align-items: center;
+        }  
+        .nav-text {
+            font-size: 20px;
+            font-weight: 500;
+        }
+ 
+  }
+  
+  .sidenav__list-item:hover {
+    background-color: $hover-color; 
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+  }
+.image-text img {
+    width: 60px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+ .image-text .header-text {
+    display: flex;
+    flex-direction: column;
+    font-family: $dancing-script;
+    font-size: 2em;
+    
+}
+
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+}
+

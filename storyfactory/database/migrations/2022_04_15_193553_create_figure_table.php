@@ -15,6 +15,7 @@ class CreateFigureTable extends Migration
     {
         Schema::create('figure', function (Blueprint $table) {
             $table->increments('id_figure');
+            $table->unsignedInteger('id_user');
             $table->string('nameFigure', 100)->unique();
             $table->text('biography')->nullable();
             $table->string('role', 100)->nullable();
@@ -32,6 +33,11 @@ class CreateFigureTable extends Migration
             $table->text('scars', 6000)->nullable();
             $table->timestamps();
         });
+
+          Schema::table('figure', function($table){
+            $table->foreign('id_user')->references('id_user')->on('usuario')->onDelete('cascade')->onUpdate('cascade');
+        });
+
     }
 
     /**

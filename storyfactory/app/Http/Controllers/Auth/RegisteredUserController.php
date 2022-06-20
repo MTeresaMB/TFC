@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Usuario;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -33,22 +33,28 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'username' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
-        ]);
 
-        $user = User::create([
-            'username' => $request->username,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        //vemos si existe el user
 
-        event(new Registered($user));
+         $existing=Usuario::where("email",$request->email)->get();
 
-        Auth::login($user);
+        if(sizeof($existing)==0) {
 
-        return redirect(RouteServiceProvider::HOME);
+            $user = Usuario::create([
+                'username' => $request->username,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+                "caracteres" => 0,
+                "is_admin" => 1,
+            ]);
+
+            event(new Registered($user));
+
+            Auth::login($user);
+
+            return redirect(RouteServiceProvider::HOME);
+        } else {
+            echo "usuario ya existente";
+        }
     }
 }

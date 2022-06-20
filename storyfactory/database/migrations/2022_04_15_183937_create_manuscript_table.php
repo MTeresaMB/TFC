@@ -22,7 +22,7 @@ class CreateManuscriptTable extends Migration
         });
 
         Schema::table('manuscript', function($table){
-            $table->foreign('id_user')->references('id_user')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_user')->references('id_user')->on('usuario')->onDelete('cascade')->onUpdate('cascade');
         });
 
     }
@@ -37,3 +37,5 @@ class CreateManuscriptTable extends Migration
         Schema::dropIfExists('manuscript');
     }
 }
+
+

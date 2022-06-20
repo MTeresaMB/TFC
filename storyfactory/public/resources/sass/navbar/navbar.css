@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-/* principal title*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 /* second title */
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
 /* paragraph */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/*title app */
 /*----variables colors----*/
 * {
   margin: 0;
@@ -51,8 +51,8 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  font-family: "Courgette", cursive;
-  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
 }
 
 .logo {
@@ -86,8 +86,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

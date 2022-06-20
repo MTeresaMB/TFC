@@ -15,6 +15,7 @@ class PlaceFactory extends Factory
     {
         return [
             'id_place'=>$this->faker->numberBetween(1,20),
+            'id_user'=>$this->faker->numberBetween(1,20),
             'name'=>$this->faker->word,
             'description'=>$this->faker->sentence(),
             'history'=>$this->faker->sentence(),

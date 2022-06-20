@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
+/* first title */
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+/*second title */
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap");
+/* paragraph */
+/*----variables colors----*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** section header main */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50px 1fr 50px;
+      grid-template-rows: 50px 1fr 50px;
+      grid-template-areas: 'header' 'main' 'footer';
+  height: 100vh;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 16px;
+  background-color: #a0576d;
+}
+
+/* Make room for the menu icon on mobile */
+.header__hello {
+  margin-left: 42px;
+  font-family: "Junge", serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.header__name {
+  font-family: "Junge", serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+/** section Change user data */
+/** styles for user data change button */
+#changeUserData a {
+  text-decoration: none;
+  top: 0;
+  color: #2c354d;
+  font-family: "Junge", serif;
+  font-size: .8rem;
+  padding: .3em;
+  -webkit-box-shadow: 3px 3px 5px rgba(5, 5, 5, 0.2);
+          box-shadow: 3px 3px 5px rgba(5, 5, 5, 0.2);
+  border-radius: 35px;
+  background: #fdfdfd;
+}
+
+#changeUserData a:hover {
+  background: #2c354d;
+  color: #f6f5ff;
+}
+
+#changeUserData:active {
+  -webkit-transform: translateY(0.1em);
+          transform: translateY(0.1em);
+}
+
+/** section Modal Change user data */
+/** styles for the modal to change user data */
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 99;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.modal_container {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  z-index: 99;
+}
+
+.modal_header
+.iconify {
+  font-size: 6.5rem;
+  color: #a0576d;
+}
+
+.modal_title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #525151;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form
+input {
+  padding: 1em;
+  margin-bottom: 0.8em;
+  border: none;
+  background: #e8e8e8;
+  border-radius: 6px;
+}
+
+.buttonSend {
+  padding: .4em;
+  background: #a0576d;
+  color: #f6f5ff;
+  font-family: "Athiti", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.buttonSend:hover {
+  background: #55192b;
+}
+
+.buttonSend:active {
+  -webkit-transform: translateY(0.1em);
+          transform: translateY(0.1em);
+}
+
+.buttonCancel {
+  padding: .4em;
+  background: #2c354d;
+  color: #f6f5ff;
+  font-family: "Athiti", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.buttonCancel:active {
+  -webkit-transform: translateY(0.1em);
+          transform: translateY(0.1em);
+}
+
+@media (max-width: 700px) {
+  #changeUserData a {
+    font-size: .7rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */
