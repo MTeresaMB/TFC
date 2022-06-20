@@ -9,7 +9,7 @@ use App\Http\Controllers\figureController;
 use App\Http\Controllers\placeController;
 use App\Http\Controllers\articleController;
 use Illuminate\Support\Facades\App;
-
+use Illuminate\Support\Facades\Redirect;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,8 +51,10 @@ Route::get("out",function() {
  * Route for language translation
  */
 
- Route::get('/greeting/{locale}', function($locale){
-    App::setLocale($locale);
+ Route::get('/locale/{locale}', function($locale){
+    session()->put('locale', $locale);
+    return Redirect::back();
+    // App::setLocale($locale);
  });
 
 /**
