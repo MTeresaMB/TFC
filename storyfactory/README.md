@@ -60,6 +60,6 @@ Prototipo de la aplicación realizado en Figma
 
 En la landing page encontrarás un poco de información de que consiste la aplicación y que puedes hacer con ella. A través de ella puedes acceder al login y al register
 
-##Registro
-    El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña
+## Registro
+El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña
     
