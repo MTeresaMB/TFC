@@ -7,36 +7,29 @@
 
 # Descripción - objetivo de la aplicación
 
-  Es una aplicación que facilita la escritura de una novela o historia, proveyendo al usuario de las herramientas necesarias para ello. El usuario podrá crear todos  los personajes de la historia, y tener acceso rápdio a ellos, tener a mano tanto la historia de cada uno de ellos como sus caracteristicas. Podrá crear los lugares  donde se desarrolla la historia y sus objetos. Y finalmente, cuando este acabada podrá exportarla a diferentes formatos (PDF, EPUB, DOCX).
+  Es una aplicación que facilita la escritura de una novela o historia, proveyendo al usuario de las herramientas necesarias para ello. El usuario podrá crear todos  los personajes de la historia, y tener acceso rápdio a ellos, tener a mano tanto la historia de cada uno de ellos como sus caracteristicas. Podrá crear los lugares  donde se desarrolla la historia y sus objetos. Y finalmente, cuando este acabada podrá exportarla a formato PDF.
 
 
 # Tecnología utilizada
 
  ## BackEnd
 
-    Como gestor de base de datos usaré Mysql. Como lenguaje utilizaré PHP con su framework Laravel en su versión 8.
+   La aplicación esta realizada en Laravel y PHP
 
  ## FrontEnd
 
-    Utilizaré SASS, como preprocesador. Javascript, junto con una libreria para crear y procesar los documentos creados para los manuscritos que se llama Editor.js
-    Tambien utilizaré Jquery. Para mostrar las estadisticas de escritura del usuario utilizaré Chart.js y para las animaciones Animejs.
+   - SASS - pre procesador CSS. 
+   - Editor JS - Libreria para crear y procesar los documentos creados por el usuario
+   - Chart JS - Para mostrar las estadisticas de escritura del usuario.
     
  ## Despliegue de la aplicación
-    Desplegar la aplicación en la nube: En que servidor en la nube vas a desplegarla?
-      -La aplicación se desplegará en el hosting Heroku
-    Dominio: Que dominio vas a utilizar (si uno gratuito, uno .es, .com?)
-      -Se utilizará el dominio www.storyfactory.com, sin ningun subdominio
-    SGBD: Vas a alojar la base de datos donde mismo que la web o en un servidor aparte?
-      -La base de datos la alojare en el mismo hosting Heroku
+   La aplicación ha sido desplegada en Heroku, sin base de datos en otro servicio. El dominio es el proporcionado por Heroku. herokuapp.com
 
 # Modelo de la base de datos
 
-
-![entidad-relacion db](https://user-images.githubusercontent.com/72388130/161332848-9ad117b3-ba8e-48d4-8212-43679e6679a8.png)
-
-
-
 ![esquema relacional db](https://user-images.githubusercontent.com/72388130/161332865-f8348c61-df18-41d6-acb7-22e2e6f3fc73.png)
+
+Para la base de datos he realizado algunos cambios con respecto al modelo anteriormente presentado. Eliminando las tablas notes y chapter
 
 ## Acceso
   El acceso a la aplicación solo podrá ser como usuario registrado o perfil de administrador. Se podrá acceder a una landing page que ofrece información sobre la aplicación para usuarios no registrados
@@ -51,3 +44,22 @@
 Prototipo de la aplicación realizado en Figma
 
 [Mockup StoryFactory](https://www.figma.com/file/Ba1P0S6p4opl8Vmd3Q3Cuz/storyfactory?node-id=0%3A1)
+
+
+#Bibliografia
+
+- [Documentación Laravel 8](https://laravel.com/docs/8.x/readme)
+- [Curso Youtube Laravel 8](https://www.youtube.com/watch?v=JRUOeMkwkIo&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF)
+- [Javier Moreno Aguilera](https://github.com/javmoreno-developer)
+- [Curso Youtube SASS](https://www.youtube.com/watch?v=I39yxJUgOuA)
+- [Documentación Editor JS](https://editorjs.io/)
+- [Documentación de jsPDF](https://artskydj.github.io/jsPDF/docs/jsPDF.html)
+- [Documentación de Heroku](https://devcenter.heroku.com/)
+
+# Tutorial de como usar StoryFactory
+
+En la landing page encontrarás un poco de información de que consiste la aplicación y que puedes hacer con ella. A través de ella puedes acceder al login y al register
+
+##Registro
+    El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña
+    
