@@ -98,3 +98,5 @@ A través de botón de *New Object* se puede acceder al panel de creación de un
 ## Administrador
 El administrador de la aplicación puede acceder a su panel y en el podrá borrar usuarios
 ![Registro](/capturas/admin.png)
+
+# Video explicativo de la aplicación
