@@ -46,7 +46,7 @@ Prototipo de la aplicación realizado en Figma
 [Mockup StoryFactory](https://www.figma.com/file/Ba1P0S6p4opl8Vmd3Q3Cuz/storyfactory?node-id=0%3A1)
 
 
-#Bibliografia
+## Bibliografia
 
 - [Documentación Laravel 8](https://laravel.com/docs/8.x/readme)
 - [Curso Youtube Laravel 8](https://www.youtube.com/watch?v=JRUOeMkwkIo&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF)
@@ -61,6 +61,6 @@ Prototipo de la aplicación realizado en Figma
 En la landing page encontrarás un poco de información de que consiste la aplicación y que puedes hacer con ella. A través de ella puedes acceder al login y al register
 
 ## Registro
-El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña
+El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña. Una vez realizado el registro podrá acceder a login y después a la aplicación
     
 ![Registro](/capturas/register.png)
