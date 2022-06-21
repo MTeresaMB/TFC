@@ -63,4 +63,4 @@ En la landing page encontrarás un poco de información de que consiste la aplic
 ## Registro
 El registro es muy sencillo, solo tienes que poner un nombre de usuario, un email y una contraseña
     
-![Registro](capturas/register.png)
+![Registro](/capturas/register.png)
