@@ -1,3 +1,6 @@
+<div class="menu-icon">
+    <span class="iconify" data-icon="fa:bars"></span>
+</div>
 <div class="header__hello">Welcome</div>
 <div class="header__name">{{Auth::user()->username}}</div>
 

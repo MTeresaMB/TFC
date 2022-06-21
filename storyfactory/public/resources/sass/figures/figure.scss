@@ -174,7 +174,7 @@ $body-card-place: #eeccc4;
 
     .card_figure{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 20vh;
         width: 40vw;
     }
@@ -192,8 +192,8 @@ $body-card-place: #eeccc4;
 
     .card_figure{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 20vh;
-        width: 80vw;
+        width: 70vw;
     }
 }

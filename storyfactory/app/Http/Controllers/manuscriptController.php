@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\manuscript;
+use App\Models\Manuscript;
 use App\Models\Usuario;
 use Illuminate\Support\Facades\DB;
 
@@ -19,7 +19,7 @@ class manuscriptController extends Controller
         $today = getdate();
         $today=$today["year"]."-".$today["mon"]."-".$today["mday"]." ".($today["hours"]+2).":".$today["minutes"].":".$today["seconds"];
         //creamos el manuscript
-        $manuscript=new manuscript;
+        $manuscript=new Manuscript;
         $manuscript->title=$title;
         $manuscript->summary=$summary;
         $manuscript->id_user=Auth::user()->id_user;
@@ -75,7 +75,7 @@ class manuscriptController extends Controller
     public function editarView(Request $req) {
         $id=$req->input("id");
         //extraemos los datos
-        $historia=manuscript::find($req->input("id"));
+        $historia=Manuscript::find($req->input("id"));
         $summary=$historia->summary;
         $title=$historia->title;
         //echo $summary;
@@ -90,16 +90,17 @@ class manuscriptController extends Controller
             $summary=$summary  . $_POST["datos"]["variable1"][$i]["data"]["text"];
         }
         //find the story
-        $historia=manuscript::find($id);
+        $historia=Manuscript::find($id);
 
         //edit story;
         $historia->title=$title;
         $historia->summary=$summary;
         $historia->save();
+        return redirect()->route("main");
     }
 
     public function borrarHistorias(Request $req) {
-        $h=manuscript::find($req->input("id"))->delete();
+        $h=Manuscript::find($req->input("id"))->delete();
 
         $historias=DB::table('manuscript')->where("id_user",Auth::user()->id_user)->get();
         return view("historias.all",["historias"=>$historias]);

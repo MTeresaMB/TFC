@@ -50,11 +50,11 @@ xmlns:svg="http://www.w3.org/2000/svg">
 </svg>
 <div class="title">StoryFactory</div>
 <ul class="links">
-  <li class="main__list">
-      <a href="{{ route('register') }}" class="main__link" id="register">Register</a>
-  </li>
-  <li class="main__list">
-      <a href="{{ route('login') }}" class="main__link" id="signin">Sign In</a>
-  </li>
+    <li class="main__list">
+        <a href="{{ route('register') }}" class="main__link" id="register" class="register">REGISTER</a>
+    </li>
+    <li class="main__list">
+        <a href="{{ route('login') }}" class="main__link" id="signin" class="signin">SIGNIN</a>
+    </li>
 </ul>
 

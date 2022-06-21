@@ -189,7 +189,7 @@ a.link_view_articles:active {
 
     .card_place{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 20vh;
         width: 40vw;
     }
@@ -207,8 +207,8 @@ a.link_view_articles:active {
 
     .card_place{
         display: flex;
-        flex-direction: row;
-        height: 20vh;
-        width: 80vw;
+        flex-direction: column;
+        height: 25vh;
+        width: 70vw;
     }
 }

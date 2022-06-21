@@ -30,12 +30,12 @@ class placeController extends Controller
     }
 
     public function borrar(Request $req) {
-        $f=place::where("id_place",$req->input("id"))->delete();
+        $f=Place::where("id_place",$req->input("id"))->delete();
         return redirect()->route("userPlaces");
     }
 
     public function editar(Request $req) {
-        $f=place::where("id_place",$req->input("id"))->get();
+        $f=Place::where("id_place",$req->input("id"))->get();
         return view("place.editar",["f"=>$f[0]]);
     }
     public function assign_editar(Request $req) {

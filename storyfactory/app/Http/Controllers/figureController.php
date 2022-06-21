@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\figure;
-use App\Models\chapter;
+use App\Models\Figure;
 use Illuminate\Support\Facades\Auth;
 
 class figureController extends Controller
@@ -16,7 +15,7 @@ class figureController extends Controller
        $hoy = getdate();
         $hoy=$hoy["year"]."-".$hoy["mon"]."-".$hoy["mday"]." ".($hoy["hours"]+2).":".$hoy["minutes"].":".$hoy["seconds"];
       //creamos los figures
-      $f=new figure;
+      $f=new Figure;
       $f->nameFigure=$req->input("nameFigure");
       $f->id_user=Auth::user()->id_user;
       $f->biography=$req->input("biography");
@@ -42,12 +41,12 @@ class figureController extends Controller
 
     public function borrar(Request $req) {
      // echo $req->input("id");
-      $f=figure::find($req->input("id"))->delete();
+      $f=Figure::find($req->input("id"))->delete();
        return redirect()->route("userFigures");
     }
 
     public function editar(Request $req) {
-      $f=figure::find($req->input("id"));
+      $f=Figure::find($req->input("id"));
       return view("figure.editar",["f"=>$f]);
     }
 
@@ -55,7 +54,7 @@ class figureController extends Controller
         $hoy = getdate();
         $hoy=$hoy["year"]."-".$hoy["mon"]."-".$hoy["mday"]." ".($hoy["hours"]+2).":".$hoy["minutes"].":".$hoy["seconds"];
       //creamos los figures
-        $f=figure::find($req->input("id"));
+        $f=Figure::find($req->input("id"));
         $f->nameFigure=$req->input("nameFigure");
         $f->id_user=Auth::user()->id_user;
         $f->biography=$req->input("biography");

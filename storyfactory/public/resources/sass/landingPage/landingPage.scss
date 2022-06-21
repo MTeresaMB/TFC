@@ -36,26 +36,17 @@ $background-video: #EECCC4;
       "setting"
 }
 
-.main__list {
-    list-style: none;
-}
-.main__link {
-    text-decoration: none;
-    font-family: $rajdhani;
-    font-size: 22px;
-    color: $color-black;
-}
-.main__list #register {
-    color: $color-nav-register;
-}
+
 .main {
     grid-area: main;
+    width: 100%;
     background-image: url("/../../img/img1.jpg");
     background-size: cover;
     background-position: center;
 }
 .yourProject {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.8fr;
     gap: 0px 20px;
@@ -106,29 +97,10 @@ $background-video: #EECCC4;
     font-weight: medium;
     letter-spacing: 10px;
 }
-.link-register {
-    text-align: center;
-    font-size: 18px;
-    font-family: $rajdhani;
-    letter-spacing: 5px;
-    color: $color-title;
-    margin-top: 20px;
-    padding-bottom: 25px;
-}
-.link-register .iconify {
-    position: absolute;
-    margin: 3px;
-    color: #39415B;
-}
-.link-register a {
-    text-decoration: none;
-    color: $color-black;
-}
-.link-register a:hover {
-    color: #994848;
-}
+
 .photo2 {
     grid-area: photo2;
+    width: 100%;
     background-image: url("/../../img/img5.jpg");
     background-position: center;
     background-size: cover;
@@ -295,3 +267,47 @@ $background-video: #EECCC4;
 }
 
 
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            'main'
+            "yourProject"
+            "video"
+            "setting";
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    .main{
+        width: 100vw;
+        background-position: center;
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+    .yourProject{
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+    .video{
+        width: 100vw;
+    }
+    .video iframe {
+        width: 100vw;
+    }
+
+    .setting{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .export{
+            grid-template-columns: 1fr;
+        }
+    }
+}

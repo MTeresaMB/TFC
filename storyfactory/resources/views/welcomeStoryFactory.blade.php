@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{str_replace('_', '-', app()->getLocale())}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEJX5EH2VG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VEJX5EH2VG');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRMHS97');</script>
+    <!-- End Google Tag Manager -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     {{-- <a href='https://www.freepik.es/fotos/mujer-independiente'>Foto de mujer independiente creado por freepik - www.freepik.es</a>
   <a href='https://www.freepik.es/fotos/mujer-escribiendo'>Foto de mujer escribiendo creado por pressfoto - www.freepik.es</a>
@@ -18,6 +34,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRMHS97"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="container">
         <div class="nav">
             @include('.templates.navbar.navbar')
@@ -38,9 +58,7 @@
             <div class="title-project2">Welcome to Story Factory</div>
             <div class="text-project2">Story Factory accompanies you when building your story, from the idea until you
                 are ready to write your draft.</div>
-            <iframe src="https://www.youtube.com/embed/JngmBhiKto4" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/aqfhg_qqVxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="setting">
             <div class="title-project3">Simple to use, but with powerful features
@@ -109,6 +127,8 @@
             </p>
         </div>
     </div>
+    <script src="{{asset("js/main.js")}}"></script>
+
 </body>
 
 </html>

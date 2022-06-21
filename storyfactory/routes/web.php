@@ -51,11 +51,10 @@ Route::get("out",function() {
  * Route for language translation
  */
 
- Route::get('/locale/{locale}', function($locale){
+ Route::get('locale/{locale}', function($locale){
     session()->put('locale', $locale);
     return Redirect::back();
-    // App::setLocale($locale);
- });
+ })->name('locale');
 
 /**
  * Route to Dashboard

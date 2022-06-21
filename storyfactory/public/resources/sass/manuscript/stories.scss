@@ -79,63 +79,6 @@ $body-card-place: #eeccc4;
 
 }
 
-
-
-/**Breakpoints responsive */
-@media (min-width: 700px){
-    .button{
-        width: 100px;
-        font-size: 16px;
-    }
-    .button:hover {
-        background-color: $sidebar-color;
-        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-        color: #fff;
-        transform: translateY(-7px);
-    }
-
-    .button:active {
-        transform: translateY(-1px);
-    }
-}
-
-@media (max-width: 900px){
-    .wrapper {
-        display: grid;
-        position: relative;
-        width: 70%;
-        margin: auto;
-        grid-template-columns: repeat(2, 1fr) ;
-        gap: 10px;
-        }
-
-    .card_book{
-        display: flex;
-        flex-direction: row;
-        height: 20vh;
-        width: 40vw;
-    }
-}
-
-@media (max-width: 700px){
-    .wrapper {
-        display: grid;
-        position: relative;
-        width: 70%;
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr) ;
-        gap: 10px;
-        }
-
-    .card_article{
-        display: flex;
-        flex-direction: row;
-        height: 20vh;
-        width: 80vw;
-    }
-}
-/************************************/
-
 /** Style editor js */
   #editorjs{
     position: relative;
@@ -193,7 +136,7 @@ $body-card-place: #eeccc4;
 
     .book-card{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 20vh;
         width: 40vw;
     }
@@ -211,7 +154,7 @@ $body-card-place: #eeccc4;
 
     .book-card{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 20vh;
         width: 80vw;
     }

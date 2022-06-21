@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Controllers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
-use App\Models\place;
+use App\Models\Place;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Usuario;

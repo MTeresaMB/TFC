@@ -2,8 +2,8 @@
 
     return [
 
-
-
+        'register' => 'registro',
+        'signin' => 'entrar',
 
 
     ];

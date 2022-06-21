@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\article;
+use App\Models\Article;
 use Illuminate\Support\Facades\Auth;
 
 class articleController extends Controller
@@ -16,7 +16,7 @@ class articleController extends Controller
         $hoy = getdate();
         $hoy=$hoy["year"]."-".$hoy["mon"]."-".$hoy["mday"]." ".($hoy["hours"]+2).":".$hoy["minutes"].":".$hoy["seconds"];
 
-        $art=new article;
+        $art=new Article;
         $art->id_user=Auth::user()->id_user;
         $art->name=$req->input("name");
         $art->description=$req->input("description");
@@ -27,12 +27,12 @@ class articleController extends Controller
     }
 
     public function borrar(Request $req) {
-        $a=article::find($req->input("id"))->delete();
+        $a=Article::find($req->input("id"))->delete();
         return redirect()->route("main");
     }
 
     public function editar(Request $req) {
-        $o=article::find($req->input("id"));
+        $o=Article::find($req->input("id"));
         return view("article.editar",["o"=>$o]);
     }
 
@@ -40,7 +40,7 @@ class articleController extends Controller
         $hoy = getdate();
         $hoy=$hoy["year"]."-".$hoy["mon"]."-".$hoy["mday"]." ".($hoy["hours"]+2).":".$hoy["minutes"].":".$hoy["seconds"];
 
-        $art=article::find($req->input("id"));
+        $art=Article::find($req->input("id"));
         $art->id_user=Auth::user()->id_user;
         $art->name=$req->input("name");
         $art->description=$req->input("description");
