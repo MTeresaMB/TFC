@@ -66,9 +66,11 @@ El registro es muy sencillo, solo tienes que poner un nombre de usuario, un emai
 ![Registro](/capturas/register.png)
 ![Registro](/capturas/login.png)
 
+## Dashboard
 En el dashboard del usuario aparece todas sus historias, personajes, lugares y objetos. También tiene varios botones para acceder a la creación de cada uno
 ![Registro](/capturas/dashboard.png)
 
+## Sidebar
 En los apartados del sidebar pueden acceder al listado de historias, personajes, lugares y objetos. En estos apartados se puede editar y borrar o crear un elemento nuevo. Y se puede exportar la historia que quiera el usuario a formato PDF.
 ![Registro](/capturas/stories.png)
 ![Registro](/capturas/characters.png)
@@ -76,8 +78,23 @@ En los apartados del sidebar pueden acceder al listado de historias, personajes,
 ![Registro](/capturas/object.png)
 ![Registro](/capturas/export.png)
 
+## Header
 A través del header se puede acceder al nombre de usuario y el email de usuario y cambiarlo.
 ![Registro](/capturas/change%20user%20data.png)
 
+## Creación nuevas historias, nuevos personajes - lugares - objetos
+
+A través de botón de *New Story* se puede acceder al panel de un documento nuevo
+![Registro](/capturas/new%20story.png)
+
+A través de botón de *New Character* se puede acceder al panel de creación de un personaje nuevo
+![Registro](/capturas/new%20character.png)
+
+A través de botón de *New Place* se puede acceder al panel de creación de un lugar nuevo
+![Registro](/capturas/new%20place.png)
+A través de botón de *New Object* se puede acceder al panel de creación de un objeto nuevo
+![Registro](/capturas/new%20object.png)
+
+## Administrador
 El administrador de la aplicación puede acceder a su panel y en el podrá borrar usuarios
 ![Registro](/capturas/admin.png)
