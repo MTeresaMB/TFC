@@ -100,4 +100,4 @@ El administrador de la aplicación puede acceder a su panel y en el podrá borra
 ![Registro](/capturas/admin.png)
 
 # Video explicativo de la aplicación
-[Tutorial StoryFactory](https://youtu.be/Qn3L4jAZ7jQ)
+- [Tutorial StoryFactory](https://youtu.be/Qn3L4jAZ7jQ)
